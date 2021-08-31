@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+.flex {
+    display:flex;
+}
+
+.navbar {
+    padding: 20px;
+    border-bottom: 1px solid $grey;
+    position: relative;
+}
+
+.sidebar {
+    background-color: $primary;
+    width: 25vh;
+    height: calc(100vh - 52px);
+    border-right: 1px solid $grey;
+    ul{
+        list-style: none;
+        padding: 2rem 1rem;
+        li{
+            margin-bottom: 1rem;
+            a{
+                text-decoration: none;
+                &.active{
+                    background-color: &grey;
+                }
+            }
+        }
+}
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+
+}
+
+div.dropdown-menu.show{
+    border:none;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
